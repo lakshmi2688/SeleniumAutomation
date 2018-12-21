@@ -1,14 +1,20 @@
 import java.io.File;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
@@ -108,6 +114,7 @@ public class GenericMethods {
 			System.out.println("Waiting for max:: " + timeout + " seconds for element to be available");
 			
 			WebDriverWait wait = new WebDriverWait(driver, 3);
+			
 			element = wait.until(
 					ExpectedConditions.visibilityOfElementLocated(locator));
 			System.out.println("Element appeared on the web page");	
@@ -185,6 +192,91 @@ public class GenericMethods {
 		WebElement element1 = driver.findElement(By.id("mouse"));
 		js.executeScript("arguments[0].click();", element1);
 	}
+	
+	
+	//Mouse over actions
+		public void testMouseoverActions()
+		{
+			WebElement elt1 = driver.findElement(By.id("mouse"));
+			Actions action = new Actions(driver);
+			action.moveToElement(elt1).perform();
+			
+			WebElement elt2 = driver.findElement(By.id("load"));
+			action.moveToElement(elt2).click().perform();
+			
+			WebElement fromElement = driver.findElement(By.id("draggable"));
+			WebElement toElement = driver.findElement(By.id("droppable"));
+			
+			// Drag and drop
+			//action.dragAndDrop(fromElement, toElement).build().perform();
+			
+			// Click and hold, move to element, release, build and perform
+			action.clickAndHold(fromElement).moveToElement(toElement).release().build().perform();
+			
+			//slider action
+			WebElement element = driver.findElement(By.xpath("//div[@id='slider']/span"));
+			action.dragAndDropBy(element, 100, 0).build().perform();
+		}
+		
+	//key press events
+		public void testKeyPress()
+		{
+			driver.findElement(By.id("user_email")).sendKeys("test@email.com");
+			//after entering email, press tab to goto password field
+			driver.findElement(By.id("user_email")).sendKeys(Keys.TAB);
+			//Now enter password
+			driver.findElement(By.id("user_password")).sendKeys("123123");
+			//instead of clicking login button, use enter on the login element
+			driver.findElement(By.name("commit")).sendKeys(Keys.ENTER);
+			
+			//COMBINATION KEY --> CNTRL + A
+			driver.findElement(By.id("openwindow")).sendKeys(Keys.CONTROL + "a");
+			//OR
+			//driver.findElement(By.id("openwindow")).sendKeys(Keys.chord(Keys.CONTROL, "a"));
+			String s = Keys.chord(Keys.CONTROL, "a");
+		}
+		
+		//GET LINKS AND STATUS
+		public void testFindLinks() {			
+			List<WebElement> linksList = clickableLinks();
+			for (WebElement link : linksList) {
+				String href = link.getAttribute("href");
+				try {
+					System.out.println("URL " + href + " returned " + linkStatus(new URL(href)));
+				}
+				catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+			}
+
+		}
+		
+		public List<WebElement> clickableLinks() {
+			List<WebElement> linksToClick = new ArrayList<WebElement>();
+			List<WebElement> elements = driver.findElements(By.tagName("a"));
+			elements.addAll(driver.findElements(By.tagName("img")));
+			
+			for (WebElement e : elements) {
+				if (e.getAttribute("href") != null) {
+					linksToClick.add(e);
+				}
+			}
+			return linksToClick;
+		}
+		
+		public String linkStatus(URL url) {
+			// http://download.java.net/jdk7/archive/b123/docs/api/java/net/HttpURLConnection.html#getResponseMessage%28%29
+			try {
+				HttpURLConnection http = (HttpURLConnection) url.openConnection();
+				http.connect();
+				String responseMessage = http.getResponseMessage();
+				http.disconnect();
+				return responseMessage;
+			}
+			catch (Exception e) {
+				return e.getMessage();
+			}
+		}
 
 	public boolean retryingFindClick(By locator) {
         boolean result = false;
