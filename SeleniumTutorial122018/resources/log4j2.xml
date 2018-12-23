@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<!-- Define the base path for the external file app.log.  -->
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+	<Appenders>
+	<!-- external files is created as logs/app.log on day 1 and rolled over as logs/app-2018-12-22.log on day 2  -->
+		<RollingFile name="File" fileName="${basePath}/app.log" filePattern="${basePath}/app-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{2} -%msg%n"/>
+			<Policies>
+	<!-- Every day a new file is created when interval = 1 -->
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+	<!-- when size of the file exceeds 100KB, another file is generated -->
+				<SizeBasedTriggeringPolicy size="100 KB"/>
+			</Policies>
+		</RollingFile>
+		<Console name="Console">
+			<PatternLayout pattern="%d{hh:mm:ss.SSS} %-5level %c{1} -%msg%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="warn">
+			<AppenderRef ref="File"/>
+			<!-- <AppenderRef ref="Console"/> -->
+		</Root>
+	<!-- To allow log msgs for classes in different packages at diff levels -->
+		<Logger name="loggerpackageone" level="all" additivity="false">
+			<AppenderRef ref="File"/>
+		</Logger>
+	<!-- Additivity allows the logs to be logged only once -->
+		<Logger name="loggerpackage" level="debug" additivity="false">
+			<AppenderRef ref="File"/>
+		</Logger>
+	</Loggers>
+</Configuration>
