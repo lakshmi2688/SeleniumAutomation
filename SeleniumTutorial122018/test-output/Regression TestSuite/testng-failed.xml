@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression TestSuite]">
+  <test thread-count="5" name="Application Test 1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows"/>
+    <groups>
+      <run>
+        <include name="onlygrp1"/>
+        <include name="onlygrp2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngdemo.NewTest2">
+        <methods>
+          <include name="testMethod3"/>
+        </methods>
+      </class> <!-- testngdemo.NewTest2 -->
+    </classes>
+  </test> <!-- Application Test 1(failed) -->
+</suite> <!-- Failed suite [Regression TestSuite] -->

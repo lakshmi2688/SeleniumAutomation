@@ -1,11 +1,11 @@
-15:11:12.647 ERROR loggerpackage.LoggingDemoOne -logging an error
-15:11:12.663 FATAL loggerpackage.LoggingDemoOne -logging a fatal message
-15:11:12.664 WARN  loggerpackage.LoggingDemoOne -logging a warning msg
-15:11:12.664 DEBUG loggerpackage.LoggingDemoOne -debug has been logged
-15:11:12.665 INFO  loggerpackage.LoggingDemoOne -info has been logged
-15:11:31.848 ERROR loggerpackageone.LoggingDemo -logging an error
-15:11:31.861 FATAL loggerpackageone.LoggingDemo -logging a fatal message
-15:11:31.862 WARN  loggerpackageone.LoggingDemo -logging a warning msg
-15:11:31.862 TRACE loggerpackageone.LoggingDemo -trace has been logged
-15:11:31.862 DEBUG loggerpackageone.LoggingDemo -debug has been logged
-15:11:31.862 INFO  loggerpackageone.LoggingDemo -info has been logged
+13:50:26.569 ERROR loggerpackageone.LoggingDemo -logging an error
+13:50:26.626 FATAL loggerpackageone.LoggingDemo -logging a fatal message
+13:50:26.627 WARN  loggerpackageone.LoggingDemo -logging a warning msg
+13:50:26.627 TRACE loggerpackageone.LoggingDemo -trace has been logged
+13:50:26.628 DEBUG loggerpackageone.LoggingDemo -debug has been logged
+13:50:26.628 INFO  loggerpackageone.LoggingDemo -info has been logged
+13:50:47.458 ERROR loggerpackage.LoggingDemoOne -logging an error
+13:50:47.469 FATAL loggerpackage.LoggingDemoOne -logging a fatal message
+13:50:47.469 WARN  loggerpackage.LoggingDemoOne -logging a warning msg
+13:50:47.470 DEBUG loggerpackage.LoggingDemoOne -debug has been logged
+13:50:47.470 INFO  loggerpackage.LoggingDemoOne -info has been logged

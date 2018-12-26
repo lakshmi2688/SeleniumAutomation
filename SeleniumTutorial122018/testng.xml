@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <?xml version="1.0" encoding="UTF-8"?>  -->
+<suite name="Regression TestSuite" parallel="tests">
+<test name="Application Test 1">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="platform" value="windows"></parameter>
+<groups>
+	<define name="onlygrp1">
+		<include name="grp1"></include>	
+	</define>
+	<define name="onlygrp2">
+		<include name="grp2"></include>	
+	</define>
+	<define name="onlygrp3">
+		<include name="grp3"></include>	
+	</define>
+	<run>
+		<include name="onlygrp1"></include>	
+		<include name="onlygrp2"></include>	
+	</run>
+</groups>
+	<classes>
+			<class name="testngdemo.NewTest1"></class>
+			 <class name="testngdemo.NewTest2"></class>  
+	</classes>
+</test>
+<test name="Application Test 2">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="platform" value="windows"></parameter>
+<groups>
+	<define name="onlygrp1">
+		<include name="grp1"></include>	
+	</define>
+	<define name="onlygrp2">
+		<include name="grp2"></include>	
+	</define>
+	<define name="onlygrp3">
+		<include name="grp3"></include>	
+	</define>
+	<run>
+		<include name="onlygrp2"></include>	
+		<include name="onlygrp3"></include>	
+	</run>
+</groups>
+	<classes>
+		<class name="testngdemo.NewTest1"></class>
+		<class name="testngdemo.NewTest2"></class>
+	</classes>
+</test>
+
+<test name="Application Test 3" preserve-order="false" enabled="false">
+<groups>
+	<define name="onlygrp1">
+		<include name="grp1"></include>	
+	</define>
+	<define name="onlygrp2">
+		<include name="grp2"></include>	
+	</define>
+	<define name="onlygrp3">
+		<include name="grp3"></include>	
+	</define>
+	<run>
+		<include name="onlygrp3"></include>	
+		<include name="onlygrp2"></include>	
+	</run>
+</groups>
+	<classes>
+			 <class name="testngdemo.NewTest1"></class>
+			 <class name="testngdemo.NewTest2"></class>  
+	</classes>
+</test>
+</suite>

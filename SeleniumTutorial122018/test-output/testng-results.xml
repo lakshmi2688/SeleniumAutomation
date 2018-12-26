@@ -2,44 +2,66 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="163" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
+  <suite name="Default suite" duration-ms="158" started-at="2018-12-26T05:24:57Z" finished-at="2018-12-26T05:24:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="163" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
-      <class name="testngdemo.NewTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testngdemo.NewTest@16905e]" name="setUp" is-config="true" duration-ms="44" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
+    <test name="Default test" duration-ms="158" started-at="2018-12-26T05:24:57Z" finished-at="2018-12-26T05:24:57Z">
+      <class name="testngdemo.DataProviderDemo">
+        <test-method status="PASS" signature="testMethod(java.lang.Integer, java.lang.String)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0]" name="testMethod" duration-ms="41" started-at="2018-12-26T05:24:57Z" data-provider="dp" finished-at="2018-12-26T05:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testngdemo.NewTest@16905e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMethod1()[pri:0, instance:testngdemo.NewTest@16905e]" name="testMethod1" duration-ms="14" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testngdemo.NewTest@16905e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0]" name="afterMethod" is-config="true" duration-ms="3" started-at="2018-12-26T05:24:57Z" finished-at="2018-12-26T05:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=DataProviderDemo.testMethod(java.lang.Integer, java.lang.String)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testngdemo.NewTest@16905e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
+        <test-method status="PASS" signature="testMethod(java.lang.Integer, java.lang.String)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0]" name="testMethod" duration-ms="2" started-at="2018-12-26T05:24:57Z" data-provider="dp" finished-at="2018-12-26T05:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:testngdemo.NewTest@16905e]" name="testMethod2" duration-ms="4" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testngdemo.NewTest@16905e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-12-26T05:24:57Z" finished-at="2018-12-26T05:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod status=SUCCESS method=DataProviderDemo.testMethod(java.lang.Integer, java.lang.String)[pri:0, instance:testngdemo.DataProviderDemo@e2cbe0] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testngdemo.NewTest@16905e]" name="cleanUp" is-config="true" duration-ms="1" started-at="2018-12-23T21:33:03Z" finished-at="2018-12-23T21:33:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- testngdemo.NewTest -->
+      </class> <!-- testngdemo.DataProviderDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
