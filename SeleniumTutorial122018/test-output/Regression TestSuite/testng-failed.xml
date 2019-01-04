@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression TestSuite]">
-  <test thread-count="5" name="Application Test 1(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="platform" value="windows"/>
-    <groups>
-      <run>
-        <include name="onlygrp1"/>
-        <include name="onlygrp2"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression TestSuite]" parallel="tests">
+  <test thread-count="5" name="Application Test 1(failed)" parallel="tests">
     <classes>
-      <class name="testngdemo.NewTest2">
+      <class name="testngdemo.NewTest1">
         <methods>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="testMethod1"/>
           <include name="testMethod3"/>
+          <include name="cleanUp"/>
+          <include name="testMethod2"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="testMethod5"/>
+          <include name="testMethod4"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="testMethod6"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- testngdemo.NewTest2 -->
+      </class> <!-- testngdemo.NewTest1 -->
     </classes>
   </test> <!-- Application Test 1(failed) -->
 </suite> <!-- Failed suite [Regression TestSuite] -->
