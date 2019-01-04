@@ -48,26 +48,4 @@
 		<class name="testngdemo.NewTest2"></class>
 	</classes>
 </test>
-
-<test name="Application Test 3" preserve-order="false" enabled="false">
-<groups>
-	<define name="onlygrp1">
-		<include name="grp1"></include>	
-	</define>
-	<define name="onlygrp2">
-		<include name="grp2"></include>	
-	</define>
-	<define name="onlygrp3">
-		<include name="grp3"></include>	
-	</define>
-	<run>
-		<include name="onlygrp3"></include>	
-		<include name="onlygrp2"></include>	
-	</run>
-</groups>
-	<classes>
-			 <class name="testngdemo.NewTest1"></class>
-			 <class name="testngdemo.NewTest2"></class>  
-	</classes>
-</test>
 </suite>

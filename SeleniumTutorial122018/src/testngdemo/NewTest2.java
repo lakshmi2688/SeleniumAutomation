@@ -50,7 +50,7 @@ public class NewTest2 extends NewTestBase{
 	}
 	
 //	enabled = false will not run the particular test method
-	@Test(groups={"grp1","grp2"},dependsOnMethods={"testMethod5"},enabled=false)
+	@Test(groups={"grp1","grp2"},dependsOnMethods={"testMethod7"},enabled=false)
 	public void testMethod4() {
 		System.out.println("\nRunning Test -> TestNG_NewTest2 -> testMethod4");
 	}
@@ -63,6 +63,11 @@ public class NewTest2 extends NewTestBase{
 	@Test(groups={"grp3","grp1"})
 	public void testMethod6() {
 		System.out.println("\nRunning Test -> TestNG_NewTest2 -> testMethod6");
+	}
+	
+	@Test(groups={"grp3","grp1"})
+	public void testMethod7() {
+		System.out.println("\nRunning Test -> TestNG_NewTest2 -> testMethod7");
 	}
 	
 }

@@ -41,7 +41,7 @@ public class SearchPageJunit {
 		Thread.sleep(2000);
 		esp.getFlyingTo("MAA");
 		Thread.sleep(2000);
-		esp.getDeparting("12/28/2018");
+		esp.getDeparting("01/28/2019");
 		Thread.sleep(2000);
 		esp.getReturning("04/26/2019");
 		Thread.sleep(2000);

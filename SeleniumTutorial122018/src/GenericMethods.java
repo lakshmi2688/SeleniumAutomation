@@ -97,6 +97,7 @@ public class GenericMethods {
 		//date example = 31
 		WebElement calMonth = driver.findElement(locator);
 		//Find all dates under the calender month using tagname ul or a or anything. Below lines needs to be changed for tagname
+		//Need not be always tagname = 'a'
 		List<WebElement> allValidDates = calMonth.findElements(By.tagName("a"));
 		for (WebElement elt : allValidDates) {
 			if (elt.getText().equals(date)) {
@@ -113,7 +114,7 @@ public class GenericMethods {
 		try {
 			System.out.println("Waiting for max:: " + timeout + " seconds for element to be available");
 			
-			WebDriverWait wait = new WebDriverWait(driver, 3);
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
 			
 			element = wait.until(
 					ExpectedConditions.visibilityOfElementLocated(locator));

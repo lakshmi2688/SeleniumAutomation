@@ -29,16 +29,14 @@ public class ExpediaSearchPage {
 	public static void getDeparting(WebDriver driver) throws InterruptedException
 	{
 		element = driver.findElement(By.id("flight-departing-flp"));
-		element.sendKeys("12/25/2018");
+		element.sendKeys("01/25/2019");
 		
 	}
 	
 	public static void getReturning(WebDriver driver) throws InterruptedException
 	{
 		element = driver.findElement(By.id("flight-returning-flp"));
-		element.clear();
-		element.sendKeys("03/04/2019");
-		element.clear();
+		Thread.sleep(1000);
 		element.sendKeys("03/04/2019");
 	}
 	

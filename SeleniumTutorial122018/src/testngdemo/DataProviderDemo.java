@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderDemo {
   @Test(dataProvider = "dp",dataProviderClass = DataProviderDemo.class)
-  public void testMethod(Integer n, String s) {
+  public void testMethod(int n, String s) {
 	   System.out.println("integer: " + n);
 	   System.out.println("string: " + s);
   }

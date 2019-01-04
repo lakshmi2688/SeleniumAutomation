@@ -1,3 +1,4 @@
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -19,8 +20,9 @@ public class WebTest {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lakshmi\\Desktop\\Selenium\\Selenium drivers download\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://www.google.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://www.google.com");
+		
 		
 //		System.setProperty("webdriver.ie.driver", "C:\\Users\\Lakshmi\\Desktop\\Selenium\\Selenium drivers download\\IEDriverServer_x64_3.14.0\\IEDriverServer.exe");
 //		driver = new InternetExplorerDriver();
