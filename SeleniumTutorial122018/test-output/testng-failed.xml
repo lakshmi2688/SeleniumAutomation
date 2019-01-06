@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Listeners TestSuite]">
-  <test thread-count="5" name="Application Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdemo.TestngListenerDemo">
+      <class name="FileUploadUsingRobot">
         <methods>
-          <include name="cleanUp"/>
-          <include name="asuite"/>
-          <include name="setUp"/>
-          <include name="testMethod2"/>
-          <include name="bsuite"/>
-          <include name="amethod"/>
-          <include name="testMethod3"/>
-          <include name="atest"/>
-          <include name="btest"/>
-          <include name="bmethod"/>
+          <include name="fileUpload"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- testngdemo.TestngListenerDemo -->
+      </class> <!-- FileUploadUsingRobot -->
     </classes>
-  </test> <!-- Application Test(failed) -->
-  <test thread-count="5" name="Application Test 1(failed)">
-    <classes>
-      <class name="testngdemo.TestngListenerDemo">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="asuite"/>
-          <include name="setUp"/>
-          <include name="testMethod2"/>
-          <include name="bsuite"/>
-          <include name="amethod"/>
-          <include name="testMethod3"/>
-          <include name="atest"/>
-          <include name="btest"/>
-          <include name="bmethod"/>
-        </methods>
-      </class> <!-- testngdemo.TestngListenerDemo -->
-    </classes>
-  </test> <!-- Application Test 1(failed) -->
-</suite> <!-- Failed suite [Listeners TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data driven TestSuite]">
+  <test thread-count="5" name="Application Test 1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="testngdemo.ExpediaSrchPageTestng">
+        <methods>
+          <include name="test" invocation-numbers="1 2 3"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testngdemo.ExpediaSrchPageTestng -->
+    </classes>
+  </test> <!-- Application Test 1(failed) -->
+  <test thread-count="5" name="Application Test 2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="testngdemo.NewTest1">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="testMethod1"/>
+          <include name="testMethod3"/>
+          <include name="cleanUp"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="testMethod5"/>
+          <include name="testMethod4"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="testMethod6"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testngdemo.NewTest1 -->
+    </classes>
+  </test> <!-- Application Test 2(failed) -->
+</suite> <!-- Failed suite [Data driven TestSuite] -->

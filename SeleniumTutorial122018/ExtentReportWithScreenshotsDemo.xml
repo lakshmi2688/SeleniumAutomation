@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Extent Reports TestSuite">
+<test name="Application Test 1">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="platform" value="windows"></parameter>
+	<classes>
+		<class name="testngdemo.ExpediaSrchPageTestng"></class>
+	</classes>
+</test>
+
+<test name="Application Test 2">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="platform" value="windows"></parameter>
+	<classes>
+		<class name="testngdemo.NewTest1"></class>
+		<class name="testngdemo.NewTest2"></class>
+	</classes>
+</test>
+</suite>

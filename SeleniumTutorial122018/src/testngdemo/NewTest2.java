@@ -4,6 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.NewTestBase;
@@ -11,8 +12,11 @@ import base.NewTestBase;
 public class NewTest2 extends NewTestBase{
  
 	@BeforeClass
-	public void setUp() {
+	@Parameters({"browser","platform"})
+	public void setUp(String browser, String platform) {
 		System.out.println("\nTestNG_NewTest2 -> This runs once before class");
+		System.out.println("Browser: " +browser);
+		System.out.println("Platform: " +platform);
 	}
 	
 	@AfterClass

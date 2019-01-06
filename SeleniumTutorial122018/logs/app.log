@@ -1,11 +1,62 @@
-22:39:09.897 ERROR loggerpackage.LoggingDemoOne -logging an error
-22:39:09.940 FATAL loggerpackage.LoggingDemoOne -logging a fatal message
-22:39:09.941 WARN  loggerpackage.LoggingDemoOne -logging a warning msg
-22:39:09.941 DEBUG loggerpackage.LoggingDemoOne -debug has been logged
-22:39:09.941 INFO  loggerpackage.LoggingDemoOne -info has been logged
-22:42:20.840 ERROR loggerpackageone.LoggingDemo -logging an error
-22:42:20.850 FATAL loggerpackageone.LoggingDemo -logging a fatal message
-22:42:20.850 WARN  loggerpackageone.LoggingDemo -logging a warning msg
-22:42:20.850 TRACE loggerpackageone.LoggingDemo -trace has been logged
-22:42:20.851 DEBUG loggerpackageone.LoggingDemo -debug has been logged
-22:42:20.851 INFO  loggerpackageone.LoggingDemo -info has been logged
+00:01:37.696 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:01:37.800 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:03:46.549 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:03:46.630 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:07:47.055 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:07:47.138 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:07:48.349 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:08:05.284 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:08:08.397 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:08:48.014 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:08:50.586 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:09:20.403 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:09:23.083 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:11:34.767 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:11:34.878 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:11:36.094 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:11:50.961 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:11:53.925 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:12:17.482 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:12:20.696 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:12:43.417 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:12:46.195 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:13:08.245 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:13:10.922 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:14:53.306 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:14:53.392 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:14:54.613 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:15:11.302 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:15:16.298 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:15:51.472 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:15:55.029 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:16:25.269 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:16:28.767 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:16:59.810 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:17:03.350 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:43:48.994 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:43:49.093 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:43:50.341 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:44:07.219 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:44:12.116 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:44:50.887 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:44:54.745 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:45:40.708 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:45:40.791 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:45:41.991 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:45:58.044 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:46:02.608 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:46:44.305 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:46:48.314 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:47:30.751 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:47:34.709 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:48:50.341 INFO  testngdemo.ExpediaSrchPageTestng -Browser started
+00:48:50.416 INFO  testngdemo.ExpediaSrchPageTestng -Page factory class initialized
+00:48:51.614 INFO  testngdemo.ExpediaSrchPageTestng -Browser maximized
+00:49:09.920 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:49:14.600 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:50:07.513 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:50:11.918 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:50:47.848 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:50:51.591 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from
+00:51:41.093 INFO  testngdemo.ExpediaSrchPageTestng -Expedia website opened
+00:51:45.387 INFO  testngdemo.ExpediaSrchPageTestng -Entered flying from

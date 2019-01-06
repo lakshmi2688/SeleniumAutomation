@@ -32,5 +32,8 @@
 		<Logger name="loggerpackage" level="debug" additivity="false">
 			<AppenderRef ref="File"/>
 		</Logger>
+		<Logger name="testngdemo" level="all" additivity="false">
+			<AppenderRef ref="File"/>
+		</Logger>
 	</Loggers>
 </Configuration>
