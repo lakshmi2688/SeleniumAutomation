@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FileUploadUsingRobot">
+      <class name="AutoITAuthDemo">
         <methods>
-          <include name="fileUpload"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="handleAuthenticationon"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- FileUploadUsingRobot -->
+      </class> <!-- AutoITAuthDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
