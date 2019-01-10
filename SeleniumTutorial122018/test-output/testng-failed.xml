@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data driven TestSuite]">
+  <test thread-count="5" name="Application Test 1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows"/>
     <classes>
-      <class name="AutoITAuthDemo">
+      <class name="testngdemo.ExpediaSrchPageTestng">
         <methods>
-          <include name="beforeClass"/>
-          <include name="handleAuthenticationon"/>
-          <include name="afterClass"/>
+          <include name="test" invocation-numbers="4"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- AutoITAuthDemo -->
+      </class> <!-- testngdemo.ExpediaSrchPageTestng -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Application Test 1(failed) -->
+</suite> <!-- Failed suite [Data driven TestSuite] -->

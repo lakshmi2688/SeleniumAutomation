@@ -1,12 +1,16 @@
 package testngdemo;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -19,10 +23,11 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExpediaSrchPageTestng {
-  
+public class SeleniumGrid {
+
 	WebDriver driver;
 	String baseUrl = "https://www.expedia.com/Flights";
+	String nodeURL = "http://10.0.0.25:5555/wd/hub";
 	ExpediaPageObjFactory esp;
 	ExtentReports report;
 	ExtentTest test;
@@ -41,7 +46,13 @@ public class ExpediaSrchPageTestng {
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lakshmi\\Desktop\\Selenium\\Selenium drivers download\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lakshmi\\Desktop\\Selenium\\Selenium drivers download\\chromedriver_win32\\chromedriver.exe");
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setBrowserName("chrome");
+		caps.setPlatform(Platform.WINDOWS);
+		driver = new RemoteWebDriver(new URL(nodeURL), caps);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		}
 		System.out.println("platform is : " +platform);
 		
@@ -133,19 +144,14 @@ public class ExpediaSrchPageTestng {
 	@AfterClass
 	public void tearDown() throws Exception {
 		
-		ExcelWrite.writeExcel("Sheet2", excelreadpath);
-		int lrow = ExcelWrite.getLastRow();
-		lrow++;
-		ExcelWrite.setCellData(lrow, "DEN", "MAA", "03/05/2019","04/10/2019",excelreadpath);
-		lrow++;
-		ExcelWrite.setCellData(lrow, "SEA", "MAA", "04/18/2019","06/24/2019",excelreadpath);
-		lrow++;
-		ExcelWrite.setCellData(lrow, "DEN", "LAX", "06/05/2019","08/10/2019",excelreadpath);
+		ExcelWrite.writeExcel("Sheet1", excelreadpath);
+		ExcelWrite.setCellData(6, "DEN", "MAA", "03/05/2019","04/10/2019",excelreadpath);
+		ExcelWrite.setCellData(7, "DEN", "MAA", "03/05/2019","04/10/2019",excelreadpath);
+		ExcelWrite.setCellData(8, "DEN", "MAA", "03/05/2019","04/10/2019",excelreadpath);
 		report.endTest(test);
 		report.flush();
 		driver.quit();
 	}
-	
 	
 	@DataProvider(name = "inputs")
 	public String[][] getData() throws IOException
@@ -153,7 +159,6 @@ public class ExpediaSrchPageTestng {
 		testData = ExcelRead.readExcel("Sheet1",excelreadpath);
 		return testData;
 	}
-	
 	
 	
 }

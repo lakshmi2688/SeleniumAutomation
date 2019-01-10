@@ -62,6 +62,10 @@ public class AutoITBasicDemo {
 //		robot.keyRelease(KeyEvent.VK_ENTER);
 		
 		//AUTOIT line
+		
+//		ControlFocus("Open", "", "Edit1")
+//		ControlSetText("Open", "", "Edit1", "C:\Users\Lakshmi\Desktop\Selenium\file upload\TestFile.txt")
+//		ControlClick("Open", "", "Button1")
 		Runtime.getRuntime().exec("C:\\Users\\Lakshmi\\Desktop\\Selenium\\AutoIT\\Scripts\\fileupload.exe");
 
 		

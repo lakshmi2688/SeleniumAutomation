@@ -1,25 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21715" started-at="2019-01-06T04:01:42Z" finished-at="2019-01-06T04:02:03Z">
+  <suite name="Data driven TestSuite" duration-ms="341363" started-at="2019-01-09T06:48:56Z" finished-at="2019-01-09T06:54:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21715" started-at="2019-01-06T04:01:42Z" finished-at="2019-01-06T04:02:03Z">
-      <class name="AutoITAuthDemo">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:AutoITAuthDemo@17fd0e6]" name="beforeClass" is-config="true" duration-ms="18199" started-at="2019-01-06T04:01:42Z" finished-at="2019-01-06T04:02:00Z">
+    <test name="Application Test 1" duration-ms="341363" started-at="2019-01-09T06:48:56Z" finished-at="2019-01-09T06:54:37Z">
+      <class name="testngdemo.ExpediaSrchPageTestng">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="setUp" is-config="true" duration-ms="6992" started-at="2019-01-09T06:48:56Z" finished-at="2019-01-09T06:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="handleAuthenticationon()[pri:0, instance:AutoITAuthDemo@17fd0e6]" name="handleAuthenticationon" duration-ms="3351" started-at="2019-01-06T04:02:00Z" finished-at="2019-01-06T04:02:03Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="50788" started-at="2019-01-09T06:49:05Z" data-provider="inputs" finished-at="2019-01-09T06:49:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SEA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1/10/19]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6/20/19]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handleAuthenticationon -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:AutoITAuthDemo@17fd0e6]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-01-06T04:02:03Z" finished-at="2019-01-06T04:02:03Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="1142" started-at="2019-01-09T06:49:55Z" finished-at="2019-01-09T06:49:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- AutoITAuthDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="42303" started-at="2019-01-09T06:49:56Z" data-provider="inputs" finished-at="2019-01-09T06:50:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SEA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3/4/19]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9/10/19]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="2599" started-at="2019-01-09T06:50:39Z" finished-at="2019-01-09T06:50:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="37711" started-at="2019-01-09T06:50:41Z" data-provider="inputs" finished-at="2019-01-09T06:51:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LAX]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SEA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4/5/19]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7/7/19]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="9587" started-at="2019-01-09T06:51:19Z" finished-at="2019-01-09T06:51:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="36034" started-at="2019-01-09T06:51:29Z" data-provider="inputs" finished-at="2019-01-09T06:52:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SEA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1/10/19]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6/20/19]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="2155" started-at="2019-01-09T06:52:05Z" finished-at="2019-01-09T06:52:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="17032" started-at="2019-01-09T06:52:07Z" data-provider="inputs" finished-at="2019-01-09T06:52:24Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+at testngdemo.ExpediaPageObjFactory.getFlyingFrom(ExpediaPageObjFactory.java:45)
+at testngdemo.ExpediaSrchPageTestng.test(ExpediaSrchPageTestng.java:82)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-01-09T06:52:24Z" finished-at="2019-01-09T06:52:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=FAILURE method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="38082" started-at="2019-01-09T06:52:24Z" data-provider="inputs" finished-at="2019-01-09T06:53:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[03/05/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="1000" started-at="2019-01-09T06:53:02Z" finished-at="2019-01-09T06:53:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="43614" started-at="2019-01-09T06:53:03Z" data-provider="inputs" finished-at="2019-01-09T06:53:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[03/05/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="1223" started-at="2019-01-09T06:53:47Z" finished-at="2019-01-09T06:53:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="test" duration-ms="44470" started-at="2019-01-09T06:53:48Z" data-provider="inputs" finished-at="2019-01-09T06:54:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[03/05/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[04/10/2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="afterMethod" is-config="true" duration-ms="1414" started-at="2019-01-09T06:54:32Z" finished-at="2019-01-09T06:54:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=ExpediaSrchPageTestng.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testngdemo.ExpediaSrchPageTestng@183df68]" name="tearDown" is-config="true" duration-ms="3501" started-at="2019-01-09T06:54:34Z" finished-at="2019-01-09T06:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngdemo.ExpediaSrchPageTestng -->
+    </test> <!-- Application Test 1 -->
+  </suite> <!-- Data driven TestSuite -->
 </testng-results>

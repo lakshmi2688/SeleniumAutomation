@@ -28,6 +28,12 @@ public class AutoITAuthDemo {
 	
 	@Test
 	public void handleAuthenticationon() throws AWTException, InterruptedException, IOException {
+//		$title="Authentication Required"
+//		WinWaitActive($title)
+//		Send("username")
+//		Send("{TAB}")
+//		Send("password")
+//		Send("{ENTER}")
 		Runtime.getRuntime().exec("C:\\Users\\Lakshmi\\Desktop\\Selenium\\AutoIT\\Scripts\\WindowsAuth.exe");
 		driver.get(baseUrl);
 	}

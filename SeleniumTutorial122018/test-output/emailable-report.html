@@ -8,11 +8,24 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">21,715</td><td></td><td></td></tr>
+<tr><th colspan="7">Data driven TestSuite</th></tr>
+<tr><td><a href="#t0">Application Test 1</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">1</td><td class="num">341,363</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">AutoITAuthDemo</td><td><a href="#m0">handleAuthenticationon</a></td><td rowspan="1">1546747320618</td><td rowspan="1">3351</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Data driven TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Application Test 1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testngdemo.ExpediaSrchPageTestng</td><td><a href="#m0">test</a></td><td rowspan="1">1547016727335</td><td rowspan="1">17032</td></tr><tr><th colspan="4">Application Test 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testngdemo.ExpediaSrchPageTestng</td><td><a href="#m1">test</a></td><td rowspan="7">1547016689143</td><td rowspan="7">36034</td></tr><tr class="passedeven"><td><a href="#m2">test</a></td></tr><tr class="passedeven"><td><a href="#m3">test</a></td></tr><tr class="passedeven"><td><a href="#m4">test</a></td></tr><tr class="passedeven"><td><a href="#m5">test</a></td></tr><tr class="passedeven"><td><a href="#m6">test</a></td></tr><tr class="passedeven"><td><a href="#m7">test</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">AutoITAuthDemo#handleAuthenticationon</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Application Test 1</h2><h3 id="m0">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+	at testngdemo.ExpediaPageObjFactory.getFlyingFrom(ExpediaPageObjFactory.java:45)
+	at testngdemo.ExpediaSrchPageTestng.test(ExpediaSrchPageTestng.java:82)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>MAA</td><td>SEA</td><td>1/10/19</td><td>6/20/19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>SEA</td><td>MAA</td><td>3/4/19</td><td>9/10/19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>DEN</td><td>MAA</td><td>03/05/2019</td><td>04/10/2019</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>DEN</td><td>MAA</td><td>03/05/2019</td><td>04/10/2019</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>MAA</td><td>SEA</td><td>1/10/19</td><td>6/20/19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>DEN</td><td>MAA</td><td>03/05/2019</td><td>04/10/2019</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testngdemo.ExpediaSrchPageTestng#test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>LAX</td><td>SEA</td><td>4/5/19</td><td>7/7/19</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

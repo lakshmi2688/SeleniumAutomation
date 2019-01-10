@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutoITAuthDemo">
+      <class name="testngdemo.SeleniumGrid">
         <methods>
-          <include name="beforeClass"/>
-          <include name="handleAuthenticationon"/>
-          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- AutoITAuthDemo -->
+      </class> <!-- testngdemo.SeleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

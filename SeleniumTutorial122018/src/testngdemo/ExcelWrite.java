@@ -50,6 +50,13 @@ public class ExcelWrite {
 		String cellData = df.formatCellValue(cell);
 		return cellData;
 	}
+	
+	public static int getLastRow() throws IOException {
+		//writeExcel(sheet,path);
+		System.out.println("XWSheet.getLastRowNum() : " + XWSheet.getLastRowNum());
+		System.out.println("XWSheet.getFirstRowNum() : " + XWSheet.getFirstRowNum());
+		return XWSheet.getLastRowNum();
+	}
 
 	public static void setCellData(int rw, String src, String dest, String fromdate, String todate, String path) throws IOException {
 		Row row = XWSheet.getRow(rw);

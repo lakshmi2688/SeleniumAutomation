@@ -60,6 +60,8 @@ public class FileUploadUsingRobot {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
+		
+		//below code is to send email
 		driver.findElement(By.xpath("//div[@id=':pb']")).click();
 	}
 
